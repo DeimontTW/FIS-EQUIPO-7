@@ -2,7 +2,7 @@
 
 La manera en la que nuestro equipo se organizó para llevar a cabo las actividades que nos generaron resultados por cada sesión de trabajo incluyó las siguientes características:
 
-•	Una sesión inicial sincrónica para escuchar propuestas de integrantes del equipo para el proyecto mediante la estrategia de lluvia de ideas y discusión grupal.
+•	Una sesión inicial sincrónica para escuchar propuestas de integrantes del equipo para el proyecto mediante la estrategia de lluvia de ideas y discusión grupal. .\n
 •	Creación de un servidor grupal de trabajo en la plataforma Discord, donde se llevaron a cabo las reuniones de audioconferencia en el chat de voz grupal del servidor.
 •	Reuniones sincrónicas de trabajo los días entre semana después de clase entre las 6 pm y 7 pm.
 •	Asignación de roles específicos de cada sesión de trabajo, los cuales cambiaban de sesión en sesión hasta poder terminar la etapa de concepción del producto.
