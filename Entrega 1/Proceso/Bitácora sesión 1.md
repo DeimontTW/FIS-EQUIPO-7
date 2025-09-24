@@ -1,4 +1,4 @@
-[Bitácora sesión 1] PRESENCIAL – 2/Sep/2025
+**[Bitácora sesión 1] PRESENCIAL – 2/Sep/2025**
 
 
 Participantes: Todo el equipo.
