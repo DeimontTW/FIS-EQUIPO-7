@@ -1,1 +1,16 @@
-hol
+Presentador: Te imaginas tener en una página web un mapa 2D de la facultad de matemáticas, y que a su vez pueda verse al estilo Street view con imágenes recientes, como Google maps, sin importar si eres aspirante, alumno de nuevo ingreso, o simplemente por pura curiosidad, desde la comodidad de tu casa a la hora que quieras, sin tener que poner un pie en la facultad podrás conocer cada rincón de la facultad de matemáticas, y que si llegas a poner un pie en la facultad se te puede mostrar tu ubicación en la facultad, así como la ubicación de los diferentes servicios (cafetería, computo, asesorías) con los que cuenta y su horario. Pues ya no te lo tienes que imaginar porque nuestro proyecto para pasar la materia de Cambranes (insertar foto de el profe), es exactamente esto.
+Posible usuario: ¿Y entonces para poder conocer la facultad ya no es necesario que vaya? ¿lo podré hacer en línea?
+Presentador: Así es, podrás conocer la apariencia completa e información relevante de las instalaciones e infraestructura de la facultad de matemáticas.
+Posible usuario: ¿Información relevante? ¿a qué se refiere con eso?
+Presentador: Imagina que pudieras saber cuando la cafetería está abierte por fin, o cuando el edificio de cómputo ya está por cerrar, o cuando estés buscando a un profesor para algo y no sepas dónde podría estar, ahora lo puedes ubicar por las clases que se están impartiendo en las aulas correspondientes a cada hora.
+Posible usuario: Oiga y si el día que se tomen las fotos para el Street view aparezco devorándome una torta, ¿van a censurar mi cara? 
+Presentador: Claro que sí para no perjudicar su bella imagen, y para evitar problemas legales, todas las caras de las personas que aparezcan en las fotos del mapa serán censuradas. 
+Posible Usuario: ¿Y la página web donde va a estar el mapa va a poder aguantar a toda la bola de usuarios que entren a la página?
+Presentador: Pero por supuesto, nuestro equipo de futuros ingenieros de software hará que la página web tenga la capacidad de soportar una gran cantidad de usuarios usando el mapa al mismo tiempo.
+Posible usuario: ¿Y dentro del mapa habrá diferentes puntos de interés y si sí como voy a saber cuales son y como ubicarlos?
+Presentador: Así es, el mapa contará con una leyenda en la cual se resaltarán estos posibles puntos de interés con colores.
+Posible usuario: Oiga yo soy repartidor de comida, ¿podre usar el mapa para poder saber cual es la ruta más rápida al lugar donde tengo que entregar el pedido?
+Presentador: En efecto no importa si no tienes interés en la facultad, podrás ingresar al mapa de todas maneras, el mapa al detectar que estas en la facultad, podrás elegir a que parte quieres ir y te buscara la ruta más rápida a ese lugar.
+
+Presentador: Así que ya escucharon mis queridos usuarios, este mapa de la facultad de matemáticas es algo que suena maravilloso y lo es, que ayudara a muchos usuarios a navegar dentro de la facultad ¡no se lo pueden perder!
+
