@@ -12,13 +12,13 @@ Proyecto: Mapa virtual interactivo e informativo de la Facultad de Matemáticas 
 * Vivanco Josué (Arquitecto de software)
 
 
-[Producto](Entrega 1/Producto)
+[Producto](Entrega%201/Producto)
 
 
-[Video Presentación](Entrega 1/VIDEO PRESENTACIÓN.MD)
+[Video Presentación](Entrega%201/VIDEO%20PRESENTACIÓN.MD)
 
 
-[Proceso](Entrega 1/Proceso)
+[Proceso](Entrega%201/Proceso)
 
 
-[Requisitos](Entrega 1/Requisitos)
+[Requisitos](Entrega%201/Requisitos)
