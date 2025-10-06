@@ -2,14 +2,14 @@
 
 Proyecto: Mapa virtual interactivo e informativo de la Facultad de Matemáticas de la UADY.
 
-***Integrantes del equipo:***
+***Integrantes del equipo (roles actualizados de acuerdo a Scrum):***
 
-* Matú Leonardo (Desarrollador Front-end)
-* Palma Leonardo (Desarrollador Back-end)
-* Padilla Germán (Líder de proyecto)
-* Pool Juan (Analista)
-* Trujeque Isaac (Diseñador)
-* Vivanco Josué (Arquitecto de software)
+* Matú Leonardo (Desarrollador)
+* Palma Leonardo (Desarrollador)
+* Padilla Germán (Product Owner)
+* Pool Juan (Desarrollador)
+* Trujeque Isaac (Desarrollador)
+* Vivanco Josué (Scrum Master)
 
 
 [Producto](Entrega%201/Producto)
