@@ -41,5 +41,3 @@ Proyecto: Mapa virtual interactivo e informativo de la Facultad de Matemáticas 
 
 
 [Competencias específicas](Entrega%201/Competencias%20específicas.md)
-
-
