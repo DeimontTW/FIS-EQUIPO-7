@@ -11,6 +11,15 @@ Proyecto: Mapa virtual interactivo e informativo de la Facultad de Matemáticas 
 * Trujeque Isaac (Desarrollador)
 * Vivanco Josué (Scrum Master)
 
+| Integrante | Descripción y rol en el proyecto |
+|-------------|----------------------------------|
+|             |                                  |
+|             |                                  |
+|             |                                  |
+|             |                                  |
+|             |                                  |
+|             |                                  |
+
 
 [Producto](Entrega%201/Producto)
 
