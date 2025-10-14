@@ -11,12 +11,15 @@ Proyecto: Mapa virtual interactivo e informativo de la Facultad de Matemáticas 
 * Trujeque Isaac (Desarrollador)
 * Vivanco Josué (Scrum Master)
 
-| Integrante | Descripción y rol en el proyecto |
-|-------------|---------------------------------|
-|Germán Padilla ![foto](imagenes/Germán.jpeg)             |Product Owner                                  |
-|Isaac Alejandro Trujeque Martin ![ISAAC](imagenes/ISAAC.png)|Desarrollador|
-|Leonardo Palma Coll  ![LeonardoPalmaColl](https://github.com/user-attachments/assets/c646c5b8-5f88-4f33-b9cc-c3eeecc83c3a)            |  desarrollador   |
-|Leonardo Daniel Matú  ![leonardo daniel matu](imagenes/foto.jpg)            |  desarrollador   |
+| Integrante  | Descripción y rol en el proyecto |
+|-------------|----------------------------------|
+|             |                                  |
+|             |                                  |
+|             |                                  |
+|             |                                  |
+|Vivanco Josue|Scrum Master ![Foto mia](image/JosueVivanco.JPG)                                 |
+|             |                                  |
+
 
 [Producto](Entrega%201/Producto)
 
