@@ -13,11 +13,11 @@ Proyecto: Mapa virtual interactivo e informativo de la Facultad de Matemáticas 
 
 | Integrante  | Descripción y rol en el proyecto |
 |-------------|----------------------------------|
-|Vivanco Josue|Scrum Master ![Foto mia](image/JosueVivanco.JPG)|
 |             |                                  |
 |             |                                  |
 |             |                                  |
 |             |                                  |
+|Vivanco Josue|Scrum Master ![Foto mia](image/JosueVivanco.JPG)                                 |
 |             |                                  |
 
 
