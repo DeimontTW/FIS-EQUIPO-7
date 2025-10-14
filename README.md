@@ -18,7 +18,7 @@ Proyecto: Mapa virtual interactivo e informativo de la Facultad de Matemáticas 
 |             |                                  |
 |             |                                  |
 |             |                                  |
-|Isaac Alejandro Trujeque Martin ![ISAAC](image/ISAAC.png)|Desarrollador
+|Isaac Alejandro Trujeque Martin ![ISAAC](imagenes/ISAAC.png)|Desarrollador
 
 [Producto](Entrega%201/Producto)
 
