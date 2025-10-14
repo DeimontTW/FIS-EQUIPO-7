@@ -13,7 +13,7 @@ Proyecto: Mapa virtual interactivo e informativo de la Facultad de Matemáticas 
 
 | Integrante | Descripción y rol en el proyecto |
 |-------------|----------------------------------|
-|Josue Vivanco ![Foto](image/JosueVivanco.JPG)         |Scrum Master                                  |
+|Josue Vivanco ![Foto](image/JosueVivanco.jpg)         |Scrum Master                                  |
 |Juan Poot ![Foto](image/Juan.jpg)     |      Desarrollador                               |
 |Germán Padilla ![foto](imagenes/Germán.jpeg)             |Product Owner                                  |
 |Isaac Alejandro Trujeque Martin ![ISAAC](imagenes/ISAAC.png)|Desarrollador|
