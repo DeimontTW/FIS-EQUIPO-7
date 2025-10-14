@@ -14,10 +14,10 @@ Proyecto: Mapa virtual interactivo e informativo de la Facultad de Matemáticas 
 | Integrante | Descripción y rol en el proyecto |
 |-------------|----------------------------------|
 |Germán Padilla ![foto](imagenes/Germán.jpeg)             |Product Owner                                  |
-|Leonardo Matú             |Desarrollador                                  |
-|Leonardo Palma             |Desarrollador                                  |
-|Juan Pool             |Desarrollador                                  |
-|Josué Vivanco             |Scrum Master                                  |
+|             |                                  |
+|             |                                  |
+|             |                                  |
+|             |                                  |
 |             |                                  |
 
 
