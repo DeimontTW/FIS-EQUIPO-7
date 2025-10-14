@@ -16,7 +16,7 @@ Proyecto: Mapa virtual interactivo e informativo de la Facultad de Matemáticas 
 |             |                                  |
 |             |                                  |
 |             |                                  |
-|             |                                  |
+|Leonardo Palma Coll  ![LeonardoPalmaColl](https://github.com/user-attachments/assets/c646c5b8-5f88-4f33-b9cc-c3eeecc83c3a)            |  desarrollador                                | 
 |             |                                  |
 |             |                                  |
 
