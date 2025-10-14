@@ -18,7 +18,7 @@ Proyecto: Mapa virtual interactivo e informativo de la Facultad de Matemáticas 
 |             |                                  |
 |             |                                  |
 |             |                                  |
-|             |                                  |
+|Josue Vivanco ![Foto](image/JosueVivanco.JPG)         |Scrum Master                                  |
 
 
 [Producto](Entrega%201/Producto)
