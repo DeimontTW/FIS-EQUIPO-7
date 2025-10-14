@@ -16,7 +16,7 @@ Proyecto: Mapa virtual interactivo e informativo de la Facultad de Matemáticas 
 |             |                                  |
 |             |                                  |
 |             |                                  |
-|             |                                  |
+|![Foto](image/Juan.jpg)     |      Desarrollador                               |
 |             |                                  |
 |             |                                  |
 
