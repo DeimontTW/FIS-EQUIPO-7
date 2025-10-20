@@ -11,7 +11,7 @@
 8. Al seleccionar un punto de interés en el mapa, se muestra imformación importante del lugar.
 9. El sistema calcula y muestra la ruta más corta de la ubicación del usuario a el destino deseado.
 
-## Diseño y experencia de usuario
+## Diseño y experiencia de usuario
 1. El diseño del mapa se ajusta correctamente a diferentes tamaños de pantalla sin perder funcionalidad o calidad.
 2. La navegación en el mapa es intuitiva y fácil de usar
 3. La interfaz de usuario tiene relación con el resto del sitio web.
