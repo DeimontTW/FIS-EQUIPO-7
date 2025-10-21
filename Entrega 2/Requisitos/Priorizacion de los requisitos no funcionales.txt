@@ -1,0 +1,66 @@
+PRIORIZACION DE REQUISITOS NO FUNCIONALES
+
+?? Alta Prioridad (Críticos / Seguridad / Disponibilidad / Rendimiento base)
+
+1. Seguridad y privacidad (geofencing):
+"El sistema debe restringir la visualización y el rastreo de la ubicación del usuario únicamente cuando este se encuentre físicamente dentro del perímetro geográfico de la Facultad de Matemáticas, utilizando geofencing para validar la posición."
+? Justificación: Garantiza privacidad del usuario y limita el acceso sensible a ubicación. Clave para protección de datos.
+
+2. Alta disponibilidad (99.999% uptime):
+"El sistema debe garantizar una disponibilidad del 99.999% mensual, equivalente a un máximo de aproximadamente 5 minutos de inactividad no planificada por mes."
+? Justificación: Requisito crítico para confiabilidad. La más alta categoría de disponibilidad esperada.
+
+3. HTTPS en todas las comunicaciones:
+"El sistema debe implementar cifrado HTTPS en todas las comunicaciones para proteger los datos del usuario."
+? Justificación: Estándar de seguridad imprescindible para cualquier sistema en producción.
+
+4. Escalabilidad / rendimiento base (300 usuarios concurrentes):
+"El sistema debe soportar un mínimo de 300 usuarios activos concurrentes accediendo simultáneamente [...] sin degradación perceptible en el rendimiento."
+? Justificación: Necesario para garantizar el funcionamiento estable del sistema bajo carga realista.
+
+?? Media Prioridad (Usabilidad / Accesibilidad / Compatibilidad / UX)
+5. Latencia de navegación ? 3s:
+"La navegación entre secciones del sistema no debe superar una latencia de 3 segundos por interacción [...]"
+? Justificación: Importante para experiencia de usuario fluida, aunque puede tolerar pequeñas variaciones temporales.
+
+6. Diseño responsivo y compatibilidad cross-browser:
+"El sitio debe ser completamente funcional y visualmente coherente en los navegadores modernos [...] y en dispositivos móviles [...]"
+? Justificación: Esencial para alcanzar a todos los usuarios, pero no crítico para la operación segura o principal del sistema.
+
+?? Baja Prioridad (Mantenimiento / Mejora continua / Estética complementaria)
+7. Documentación con estándares de desarrollo web:
+"El sistema debe estar documentado utilizando estándares de desarrollo web para facilitar futuras actualizaciones o corrección de errores."
+? Justificación: Afecta a la mantenibilidad a largo plazo, pero no al funcionamiento inmediato del sistema.
+
+8. Anonimización visual en imágenes tipo Street View:
+"Las imágenes mostradas en la vista tipo Street View deben aplicar un desenfoque automático [...] para proteger la identidad y privacidad de las personas."
+? Justificación: Relevante para privacidad y ética, pero de implementación complementaria si el sistema aún no presenta imágenes 
+
+Resumen visual:
+Prioridad
+
+Requisito
+?? Alta
+
+Geofencing para ubicación segura
+?? Alta
+
+Disponibilidad 99.999%
+?? Alta
+
+HTTPS en todas las comunicaciones
+?? Alta
+
+Soporte a 300 usuarios concurrentes
+?? Media
+
+Latencia ? 3 segundos
+?? Media
+
+Responsivo y compatible con navegadores y dispositivos
+?? Baja
+
+Documentación con estándares
+?? Baja
+
+Blur automático en rostros humanos (amonificación)
