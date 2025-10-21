@@ -8,7 +8,7 @@
 5. La ubicación se actualiza en tiempo real mientras el usuario se mueve por el campus.
 6. Se muestra una estimación del tiempo de caminata.
 7. Los puntos de interés designados se muestran claramente en el mapa.
-8. Al seleccionar un punto de interés en el mapa, se muestra imformación importante del lugar.
+8. Al seleccionar un punto de interés en el mapa, se muestra información importante del lugar.
 9. El sistema calcula y muestra la ruta más corta de la ubicación del usuario a el destino deseado.
 
 ## Diseño y experiencia de usuario
