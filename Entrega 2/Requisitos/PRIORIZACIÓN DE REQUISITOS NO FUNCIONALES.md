@@ -1,0 +1,97 @@
+# PRIORIZACIÓN DE REQUISITOS NO FUNCIONALES
+
+## 🔴 Alta Prioridad (Críticos / Seguridad / Disponibilidad / Rendimiento base)
+
+### 1. Seguridad y privacidad (geofencing)
+> **Requisito:**  
+> *"El sistema debe restringir la visualización y el rastreo de la ubicación del usuario únicamente cuando este se encuentre físicamente dentro del perímetro geográfico de la Facultad de Matemáticas, utilizando geofencing para validar la posición."*
+
+**Justificación:**  
+Garantiza privacidad del usuario y limita el acceso sensible a ubicación. Clave para protección de datos.
+
+---
+
+### 2. Alta disponibilidad (99.999% uptime)
+> **Requisito:**  
+> *"El sistema debe garantizar una disponibilidad del 99.999% mensual, equivalente a un máximo de aproximadamente 5 minutos de inactividad no planificada por mes."*
+
+**Justificación:**  
+Requisito crítico para confiabilidad. La más alta categoría de disponibilidad esperada.
+
+---
+
+### 3. HTTPS en todas las comunicaciones
+> **Requisito:**  
+> *"El sistema debe implementar cifrado HTTPS en todas las comunicaciones para proteger los datos del usuario."*
+
+**Justificación:**  
+Estándar de seguridad imprescindible para cualquier sistema en producción.
+
+---
+
+### 4. Escalabilidad / rendimiento base (300 usuarios concurrentes)
+> **Requisito:**  
+> *"El sistema debe soportar un mínimo de 300 usuarios activos concurrentes accediendo simultáneamente [...] sin degradación perceptible en el rendimiento."*
+
+**Justificación:**  
+Necesario para garantizar el funcionamiento estable del sistema bajo carga realista.
+
+---
+
+### 5. Anonimización visual en imágenes tipo Street View
+> **Requisito:**  
+> *"Las imágenes mostradas en la vista tipo Street View deben aplicar un desenfoque automático [...] para proteger la identidad y privacidad de las personas."*
+
+**Justificación:**  
+Relevante para privacidad y ética, pero de implementación complementaria si el sistema aún no presenta imágenes. 
+
+---
+
+
+## 🟡 Media Prioridad (Usabilidad / Accesibilidad / Compatibilidad / UX)
+
+### 6. Latencia de navegación ≤ 3s
+> **Requisito:**  
+> *"La navegación entre secciones del sistema no debe superar una latencia de 3 segundos por interacción [...]"*
+
+**Justificación:**  
+Importante para experiencia de usuario fluida, aunque puede tolerar pequeñas variaciones temporales.
+
+---
+
+### 7. Diseño responsivo y compatibilidad cross-browser
+> **Requisito:**  
+> *"El sitio debe ser completamente funcional y visualmente coherente en los navegadores modernos [...] y en dispositivos móviles [...]"*
+
+**Justificación:**  
+Esencial para alcanzar a todos los usuarios, pero no crítico para la operación segura o principal del sistema.
+
+---
+
+## 🟢 Baja Prioridad (Mantenimiento / Mejora continua / Estética complementaria)
+
+### 8. Documentación con estándares de desarrollo web
+> **Requisito:**  
+> *"El sistema debe estar documentado utilizando estándares de desarrollo web para facilitar futuras actualizaciones o corrección de errores."*
+
+**Justificación:**  
+Afecta a la mantenibilidad a largo plazo, pero no al funcionamiento inmediato del sistema.
+
+---
+
+
+
+## 📊 Resumen visual de prioridades
+
+| Prioridad | Requisito                                                                 |
+|-----------|---------------------------------------------------------------------------|
+| 🔴 Alta   | Geofencing para ubicación segura                                          |
+| 🔴 Alta   | Disponibilidad 99.999%                                                    |
+| 🔴 Alta   | HTTPS en todas las comunicaciones                                         |
+| 🔴 Alta   | Soporte a 300 usuarios concurrentes                                       |
+| 🔴 Alta   | Blur automático en rostros humanos (anonimización)                        |
+| 🟡 Media  | Latencia ≤ 3 segundos                                                     |
+| 🟡 Media  | Responsivo y compatible con navegadores y dispositivos                    |
+| 🟢 Baja   | Documentación con estándares                                              |
+
+---
