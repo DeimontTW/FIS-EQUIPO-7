@@ -38,9 +38,19 @@ Necesario para garantizar el funcionamiento estable del sistema bajo carga reali
 
 ---
 
+### 5. Anonimización visual en imágenes tipo Street View
+> **Requisito:**  
+> *"Las imágenes mostradas en la vista tipo Street View deben aplicar un desenfoque automático [...] para proteger la identidad y privacidad de las personas."*
+
+**Justificación:**  
+Relevante para privacidad y ética, pero de implementación complementaria si el sistema aún no presenta imágenes. 
+
+---
+
+
 ## 🟡 Media Prioridad (Usabilidad / Accesibilidad / Compatibilidad / UX)
 
-### 5. Latencia de navegación ≤ 3s
+### 6. Latencia de navegación ≤ 3s
 > **Requisito:**  
 > *"La navegación entre secciones del sistema no debe superar una latencia de 3 segundos por interacción [...]"*
 
@@ -49,7 +59,7 @@ Importante para experiencia de usuario fluida, aunque puede tolerar pequeñas va
 
 ---
 
-### 6. Diseño responsivo y compatibilidad cross-browser
+### 7. Diseño responsivo y compatibilidad cross-browser
 > **Requisito:**  
 > *"El sitio debe ser completamente funcional y visualmente coherente en los navegadores modernos [...] y en dispositivos móviles [...]"*
 
@@ -60,7 +70,7 @@ Esencial para alcanzar a todos los usuarios, pero no crítico para la operación
 
 ## 🟢 Baja Prioridad (Mantenimiento / Mejora continua / Estética complementaria)
 
-### 7. Documentación con estándares de desarrollo web
+### 8. Documentación con estándares de desarrollo web
 > **Requisito:**  
 > *"El sistema debe estar documentado utilizando estándares de desarrollo web para facilitar futuras actualizaciones o corrección de errores."*
 
@@ -69,14 +79,7 @@ Afecta a la mantenibilidad a largo plazo, pero no al funcionamiento inmediato de
 
 ---
 
-### 8. Anonimización visual en imágenes tipo Street View
-> **Requisito:**  
-> *"Las imágenes mostradas en la vista tipo Street View deben aplicar un desenfoque automático [...] para proteger la identidad y privacidad de las personas."*
 
-**Justificación:**  
-Relevante para privacidad y ética, pero de implementación complementaria si el sistema aún no presenta imágenes.
-
----
 
 ## 📊 Resumen visual de prioridades
 
@@ -86,9 +89,9 @@ Relevante para privacidad y ética, pero de implementación complementaria si el
 | 🔴 Alta   | Disponibilidad 99.999%                                                    |
 | 🔴 Alta   | HTTPS en todas las comunicaciones                                         |
 | 🔴 Alta   | Soporte a 300 usuarios concurrentes                                       |
+| 🔴 Alta   | Blur automático en rostros humanos (anonimización)                        |
 | 🟡 Media  | Latencia ≤ 3 segundos                                                     |
 | 🟡 Media  | Responsivo y compatible con navegadores y dispositivos                    |
-| 🟢 Baja   | Documentación con estándares                                               |
-| 🟢 Baja   | Blur automático en rostros humanos (anonimización)                        |
+| 🟢 Baja   | Documentación con estándares                                              |
 
 ---
