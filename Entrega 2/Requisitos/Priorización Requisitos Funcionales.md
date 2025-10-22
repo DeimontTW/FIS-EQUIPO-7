@@ -14,7 +14,7 @@
 
 * 🟡**Incluirá una heramienta de búsqueda para puntos de interés y planificar una ruta con punto de inicio y destino** : Esencial para evitar la desorientación y facilitar la búsqueda y la ruta a seguir que el usuario necesite
 
-* 🟡**El mapa enviará notificaciones push cuando ya se encuentre abierta la cafetería, sala de cómputo, biblioteca, entre otros puntos de interés** : Requerimiento para mantener informado al usuario sobre eventos que ocurran en determinado momento notificándolos de manera atractiva
+* 🟡**El mapa enviará notificaciones push sobre el estado de las dependencias, si se encuentra abierto, cerrado, en mantenimiento, si suspende sus actividades o se encuentre ocupada por algún evento** : Requerimiento para mantener informado al usuario sobre eventos que ocurran en determinado momento en las dependencias notificándolos de manera atractiva
 
 * 🔴**Apartado de configuración para activar o desactivar tooltips y animaciones del mapa** : Para simplificar el uso del mapa si el usuario así lo desea
 
