@@ -1,22 +1,34 @@
 # Definition of done 
 
 ## Functionality
-1. The option to change into the street view it´s available and works correctly for the enabled areas.
-2. Both views allow the navegation.
-3. The map detects and shows with precision the current location of the user.
-4. The user can select a point of interest as destination.
-5. The location updates in real time while the user moves around the campus.
-6. Shows an estimate of time for the hike.
-7. The points of interest designated are clearly shown in the map.
-8. When selecting a point of interest in the map, it shows important information about the place.
-9. The sistem calculates and shows the shortest route from the user location to the destination.
+1. The Street View button or icon is enabled and, when activated, correctly loads the immersive Google Street View for the university campus streets and paths that have coverage by said service.
+
+2. Both the 2D map view and the Street View allow the user to navigate using touch gestures (on mobile devices) or cursor dragging (on desktop), as well as zoom to change the view.
+
+3. The system uses the device's GPS (with a minimum accuracy of 5 meters) to detect and mark the user's current location on the map, represented by a pin.
+
+4. The user can select a Point of Interest from a filtered list or by clicking/tapping directly on its icon on the map to set it as a destination.
+
+5. The user's location (the pin) is updated on the map with a minimum frequency of every 2 seconds while the user physically moves around the campus, reflecting their movement in real-time.
+
+6. The system clearly displays an estimated walking time in minutes, calculated based on the shortest pedestrian route and an average walking speed of 5 km/h.
+
+7. The designated Points of Interest (minimum of 20: classrooms, libraries, cafeterias, etc.) are displayed on the map using differentiated icons and a clearly visible legend.
+
+8. Upon selecting a Point of Interest on the map, a tooltip or modal window is displayed, showing its name, hours of operation, and a brief description or image.
+
+9. The system automatically calculates and draws the shortest pedestrian route (in meters) from the user's current location to the selected destination, representing it with a solid  line.
 
 ## Design y user experience
-1. The design of the map fits correctly with different screen sizes without losing functionality or quality.
-2. The navigation in the map it´s intuitive and easy to use.
-3. The user interface is related with the rest of the web site.
+1. The map interface is 100% responsive and correctly adapts to the viewports of smartphones, tablets, and desktops, maintaining full functionality and the legibility of all elements on all of them.
+
+2. Map navigation (dragging, zooming, changing views) is intuitive for an average user without the need for prior instructions.
+
+3. The map's user interface (buttons, color palette, typography) consistently follows the university website's style guide, visually integrating with the rest of the page's components.
 
 ## Performance
-1. The map loads in less than 3 seconds with an standar internet connection.
-2. The transition between 2D and Street View is smooth and doesn´t have significant delays.
-3. The detection of the user location it´s quick and precise.
+1. The base map (2D view with Points of interest) loads completely and becomes interactive in less than 3 seconds, simulating a 4G LTE internet connection (5 Mbps download).
+
+2. The transition between the 2D map view and the Street View is completed in less than 3 second, without noticeable freezes or blank screens for the user.
+
+3. The geolocation function obtains an initial reading of the user's position with a minimum accuracy of 10 meters within 5 seconds of permission being granted.
