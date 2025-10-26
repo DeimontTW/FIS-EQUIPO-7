@@ -4,13 +4,13 @@
   El sistema debe restringir la visualización y el rastreo de la ubicación del usuario únicamente cuando este se encuentre físicamente dentro del perímetro geográfico de la Facultad de Matemáticas, utilizando geofencing para validar la posición.
 
 - **Alta disponibilidad:**  
-  El sistema debe garantizar una disponibilidad del 99.999% mensual, equivalente a un máximo de aproximadamente 5 minutos de inactividad no planificada por mes.
+  El sistema debe garantizar una disponibilidad del 99.999% mensual.
 
 - **Rendimiento de navegación:**  
   La navegación entre secciones del sistema no debe superar una latencia de 3 segundos por interacción en condiciones de red estándar (al menos 5 Mbps de bajada).
 
 - **Compatibilidad multiplataforma:**  
-  El sitio debe ser completamente funcional y visualmente coherente en los navegadores modernos más utilizados (Chrome, Firefox, Safari, Edge) y en dispositivos móviles (Android e iOS) con pantallas desde 5” hasta 15”, adaptándose mediante diseño responsivo.
+  El sitio debe ser completamente funcional y visualmente coherente en el navegador modernos más utilizado (Chrome), adaptándose mediante diseño responsivo.
 
 - **Seguridad en la comunicación:**  
   El sistema debe implementar cifrado HTTPS en todas las comunicaciones para proteger los datos del usuario.
