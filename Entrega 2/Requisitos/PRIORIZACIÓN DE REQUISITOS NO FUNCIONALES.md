@@ -13,7 +13,7 @@ Garantiza privacidad del usuario y limita el acceso sensible a ubicación. Clave
 
 ### 2. Alta disponibilidad (99.999% uptime)
 > **Requisito:**  
-> *"El sistema debe garantizar una disponibilidad del 99.999% mensual, equivalente a un máximo de aproximadamente 5 minutos de inactividad no planificada por mes."*
+> *"El sistema debe garantizar una disponibilidad del 99.999% mensual."*
 
 **Justificación:**  
 Requisito crítico para confiabilidad. La más alta categoría de disponibilidad esperada.
@@ -61,7 +61,7 @@ Importante para experiencia de usuario fluida, aunque puede tolerar pequeñas va
 
 ### 7. Diseño responsivo y compatibilidad cross-browser
 > **Requisito:**  
-> *"El sitio debe ser completamente funcional y visualmente coherente en los navegadores modernos [...] y en dispositivos móviles [...]"*
+> *"El sitio debe ser completamente funcional y visualmente coherente en el navegador moderno [...]  [...]"*
 
 **Justificación:**  
 Esencial para alcanzar a todos los usuarios, pero no crítico para la operación segura o principal del sistema.
@@ -87,11 +87,11 @@ Afecta a la mantenibilidad a largo plazo, pero no al funcionamiento inmediato de
 |-----------|---------------------------------------------------------------------------|
 | 🔴 Alta   | Geofencing para ubicación segura                                          |
 | 🔴 Alta   | Disponibilidad 99.999%                                                    |
-| 🔴 Alta   | HTTPS en todas las comunicaciones                                         |
+| 🔴 Alta   | HTTPS en todas las comunicaciones                                |
 | 🔴 Alta   | Soporte a 300 usuarios concurrentes                                       |
 | 🔴 Alta   | Blur automático en rostros humanos (anonimización)                        |
 | 🟡 Media  | Latencia ≤ 3 segundos                                                     |
-| 🟡 Media  | Responsivo y compatible con navegadores y dispositivos                    |
+| 🟡 Media  | Responsivo y compatible con navegador chrome                              |
 | 🟢 Baja   | Documentación con estándares                                              |
 
 ---
