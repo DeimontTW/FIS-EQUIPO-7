@@ -1,1 +1,1 @@
-Video presentación: https://alumnosuady-my.sharepoint.com/:f:/g/personal/a25216400_alumnos_uady_mx/EsLAg8dTlT5FtZFRI7d-vM0BgLTmwO05vOq7WptigXF_mg?e=ymWaB4
+Video presentación: https://alumnosuady-my.sharepoint.com/personal/a25216400_alumnos_uady_mx/_layouts/15/stream.aspx?id=%2Fpersonal%2Fa25216400%5Falumnos%5Fuady%5Fmx%2FDocuments%2FVideo%20Presentaci%C3%B3n%20Entrega%202%20FIS%2FVideo%20Equipo%207%20Entrega%202%2Emp4&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Efc9f51af%2Dd62e%2D4d01%2D8710%2D0cdd5e907113
