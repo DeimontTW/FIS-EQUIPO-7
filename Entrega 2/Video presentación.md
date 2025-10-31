@@ -1,1 +1,1 @@
-Video presentación: https://alumnosuady-my.sharepoint.com/:f:/g/personal/a25216400\_alumnos\_uady\_mx/EsLAg8dTlT5FtZFRI7d-vM0BgLTmwO05vOq7WptigXF\_mg?e=ymWaB4 
+Video presentación: https://alumnosuady-my.sharepoint.com/:f:/g/personal/a25216400_alumnos_uady_mx/EsLAg8dTlT5FtZFRI7d-vM0BgLTmwO05vOq7WptigXF_mg?e=ymWaB4
