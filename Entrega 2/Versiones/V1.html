@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FMAP - Mapa Virtual FMAT UADY</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lucide/0.263.1/umd/lucide.min.js"></script>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      background: #f5f5f5;
+      overflow: hidden;
+    }
+
+    header {
+      background: linear-gradient(135deg, #012e5f, #014580);
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 2rem;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    }
+
+    .logo-title {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .logos img {
+      height: 80px;
+      width: auto;
+      border-radius: 8px;
+      background: white;
+      padding: 0.3rem;
+    }
+
+    .title-text h1 {
+      font-size: 2rem;
+      font-weight: 800;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+    }
+
+    .title-text p {
+      font-size: 1.1rem;
+      opacity: 0.9;
+    }
+
+    .view-switch {
+      display: flex;
+      align-items: center;
+      background: white;
+      border-radius: 30px;
+      overflow: hidden;
+      cursor: pointer;
+      border: 2px solid #012e5f;
+    }
+
+    .switch-option {
+      padding: 0.6rem 1.2rem;
+      color: #012e5f;
+      font-weight: 700;
+      transition: all 0.3s;
+      cursor: pointer;
+    }
+
+    .switch-option.active {
+      background: #c79316;
+      color: white;
+    }
+
+    .main-container {
+      display: flex;
+      height: calc(100vh - 100px);
+      transition: all 0.5s ease;
+    }
+
+    .sidebar {
+      width: 300px;
+      background: white;
+      box-shadow: 2px 0 10px rgba(0,0,0,0.1);
+      overflow-y: auto;
+      transition: all 0.4s ease;
+      padding: 1rem;
+    }
+
+    .sidebar.hidden {
+      width: 0;
+      opacity: 0;
+      overflow: hidden;
+      padding: 0;
+    }
+
+    .toggle-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: #012e5f;
+      color: white;
+      border: none;
+      border-radius: 0 8px 8px 0;
+      width: 25px;
+      height: 60px;
+      cursor: pointer;
+      z-index: 5;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .toggle-btn:hover {
+      background: #c79316;
+    }
+
+    .sidebar-right {
+      right: 0;
+      border-left: 1px solid #ddd;
+    }
+
+    .viewer {
+      flex: 1;
+      position: relative;
+      background: #e0e0e0;
+      overflow: hidden;
+      transition: all 0.5s ease;
+    }
+
+    .street-view, .map-2d {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      transition: opacity 0.6s ease;
+    }
+
+    .street-view {
+      background: linear-gradient(to bottom, #87CEEB, #E0F6FF, #D3D3D3);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #012e5f;
+      font-size: 2rem;
+      font-weight: 700;
+      opacity: 0;
+    }
+
+    .map-2d {
+      background: url('https://via.placeholder.com/1200x800/012e5f/ffffff?text=Mapa+FMAT+UADY') center/contain no-repeat #f0f0f0;
+      border: 2px dashed #012e5f;
+      opacity: 1;
+    }
+
+    .street-view.active {
+      opacity: 1;
+    }
+
+    .map-2d.active {
+      opacity: 1;
+    }
+
+    .tooltip {
+      position: absolute;
+      background: white;
+      color: #012e5f;
+      padding: 0.8rem 1rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      font-size: 0.9rem;
+      display: none;
+      z-index: 10;
+      white-space: nowrap;
+      border: 1px solid #012e5f;
+      pointer-events: none;
+    }
+
+    .map-btn {
+      position: absolute;
+      background: #012e5f;
+      color: white;
+      border: none;
+      padding: 0.8rem 1.2rem;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 0.9rem;
+      font-weight: 600;
+      transition: all 0.3s;
+      z-index: 5;
+      min-width: 100px;
+      text-align: center;
+    }
+
+    .map-btn:hover {
+      background: #c79316;
+      transform: scale(1.1);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    }
+
+    .active-location {
+      animation: pulse 1.5s infinite;
+      background: #c79316;
+    }
+
+    @keyframes pulse {
+      0%,100% { 
+        box-shadow: 0 0 0 0 rgba(199,147,22, 0.7); 
+      }
+      50% { 
+        box-shadow: 0 0 0 10px rgba(199,147,22, 0); 
+      }
+    }
+
+    .sidebar-list {
+      list-style: none;
+      padding: 0;
+    }
+
+    .sidebar-list li {
+      padding: 0.8rem 1rem;
+      margin: 0.5rem 0;
+      background: #f5f5f5;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: all 0.3s;
+      border-left: 4px solid #012e5f;
+    }
+
+    .sidebar-list li:hover {
+      background: #012e5f;
+      color: white;
+      transform: translateX(5px);
+    }
+
+    .sidebar input {
+      width: 100%;
+      padding: 0.8rem;
+      margin-bottom: 0.8rem;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      font-size: 0.9rem;
+    }
+
+    .sidebar button {
+      width: 100%;
+      padding: 0.8rem;
+      background: #012e5f;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 0.9rem;
+      font-weight: 600;
+      transition: all 0.3s;
+    }
+
+    .sidebar button:hover {
+      background: #c79316;
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo-title">
+      <div class="logos">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPfpWdfaJFb5jG1r2C-J_RyDCTK2o6FRFlbo_Zr-y8J7AldDVLaxE4GQvyWQ8x_q68KDE&usqp=CAU" alt="FMAT">
+        <img src="https://media.licdn.com/dms/image/v2/D5603AQF11oyYRxnz4A/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1680213696912?e=2147483647&v=beta&t=jWernuyB0zbyAOwClaPCmsBQyzOSbZDv6Nl00zIZtzI" alt="UADY">
+      </div>
+      <div class="title-text">
+        <h1>FMAP</h1>
+        <p>Mapa Virtual FMAT - UADY</p>
+      </div>
+    </div>
+    <div class="view-switch" id="viewSwitch">
+      <div class="switch-option active" data-view="2d">Vista 2D</div>
+      <div class="switch-option" data-view="street">Street View</div>
+    </div>
+  </header>
+
+  <div class="main-container">
+    <button class="toggle-btn" id="toggleLeft">‹</button>
+    <div class="sidebar" id="sidebarLeft">
+      <h3 style="color:#012e5f; margin-bottom: 1rem;">Puntos de Interés</h3>
+      <ul class="sidebar-list">
+        <li data-location="admin">🏢 Administración</li>
+        <li data-location="biblioteca">📚 Biblioteca</li>
+        <li data-location="aulas">🏛️ Aulas</li>
+        <li data-location="labs">🧮 Laboratorios</li>
+        <li data-location="cafeteria">☕ Cafetería</li>
+      </ul>
+    </div>
+
+    <div class="viewer" id="viewer">
+      <div class="street-view" id="streetView">
+        <div style="text-align: center;">
+          <div style="font-size: 4rem; margin-bottom: 1rem;">🌍</div>
+          <h2>Vista Panorámica 360°</h2>
+          <p style="font-size: 1rem; margin-top: 1rem;">Vista de Street View - En Desarrollo</p>
+        </div>
+      </div>
+      <div class="map-2d active" id="map2d">
+        <button class="map-btn" style="top:30%;left:35%;" data-location="biblioteca" data-tooltip="📚 Biblioteca: Recursos bibliográficos y área de estudio">Biblioteca</button>
+        <button class="map-btn" style="top:55%;left:20%;" data-location="aulas" data-tooltip="🏛️ Aulas: Clases y conferencias">Aulas</button>
+        <button class="map-btn" style="top:40%;left:65%;" data-location="labs" data-tooltip="🧮 Laboratorios: Cómputo y análisis">Laboratorios</button>
+        <button class="map-btn" style="top:20%;left:75%;" data-location="cafeteria" data-tooltip="☕ Cafetería: Área de descanso y alimentos">Cafetería</button>
+        <button class="map-btn active-location" style="top:45%;left:50%;" data-location="admin" data-tooltip="🏢 Administración: Oficina principal">Administración</button>
+        <div class="tooltip" id="tooltip"></div>
+      </div>
+    </div>
+
+    <div class="sidebar sidebar-right" id="sidebarRight">
+      <h3 style="color:#012e5f; margin-bottom: 1rem;">Planificador de Ruta</h3>
+      <div>
+        <input type="text" placeholder="📍 Punto de inicio" id="startPoint">
+        <input type="text" placeholder="🎯 Punto de destino" id="endPoint">
+        <button id="calculateRoute">Calcular Ruta</button>
+      </div>
+      <div id="routeInfo" style="margin-top: 1rem; padding: 1rem; background: #f5f5f5; border-radius: 6px; display: none;">
+        <h4>Ruta Calculada</h4>
+        <p id="routeDetails"></p>
+      </div>
+    </div>
+    <button class="toggle-btn sidebar-right" id="toggleRight">›</button>
+  </div>
+
+  <script>
+    // Inicializar iconos de Lucide
+    lucide.createIcons();
+
+    // Elementos del DOM
+    const viewSwitch = document.getElementById('viewSwitch');
+    const map2d = document.getElementById('map2d');
+    const streetView = document.getElementById('streetView');
+    const toggleLeft = document.getElementById('toggleLeft');
+    const toggleRight = document.getElementById('toggleRight');
+    const sidebarLeft = document.getElementById('sidebarLeft');
+    const sidebarRight = document.getElementById('sidebarRight');
+    const tooltip = document.getElementById('tooltip');
+    const calculateRouteBtn = document.getElementById('calculateRoute');
+    const routeInfo = document.getElementById('routeInfo');
+    const routeDetails = document.getElementById('routeDetails');
+
+    // Cambio entre vistas 2D y Street View
+    viewSwitch.addEventListener('click', e => {
+      if (!e.target.classList.contains('switch-option')) return;
+      
+      document.querySelectorAll('.switch-option').forEach(btn => btn.classList.remove('active'));
+      e.target.classList.add('active');
+      
+      const view = e.target.dataset.view;
+      if (view === '2d') {
+        map2d.classList.add('active');
+        streetView.classList.remove('active');
+      } else {
+        map2d.classList.remove('active');
+        streetView.classList.add('active');
+      }
+    });
+
+    // Toggle de sidebars
+    toggleLeft.addEventListener('click', () => {
+      sidebarLeft.classList.toggle('hidden');
+      toggleLeft.textContent = sidebarLeft.classList.contains('hidden') ? '›' : '‹';
+    });
+
+    toggleRight.addEventListener('click', () => {
+      sidebarRight.classList.toggle('hidden');
+      toggleRight.textContent = sidebarRight.classList.contains('hidden') ? '‹' : '›';
+    });
+
+    // Tooltips para botones del mapa
+    document.querySelectorAll('.map-btn').forEach(btn => {
+      btn.addEventListener('mouseenter', e => {
+        tooltip.textContent = btn.dataset.tooltip;
+        tooltip.style.display = 'block';
+        tooltip.style.top = (btn.offsetTop - 45) + 'px';
+        tooltip.style.left = (btn.offsetLeft + btn.offsetWidth/2 - tooltip.offsetWidth/2) + 'px';
+      });
+      
+      btn.addEventListener('mouseleave', () => {
+        tooltip.style.display = 'none';
+      });
+
+      btn.addEventListener('click', () => {
+        const location = btn.dataset.location;
+        alert(`Has seleccionado: ${btn.textContent}\n${btn.dataset.tooltip}`);
+      });
+    });
+
+    // Interactividad de la lista del sidebar
+    document.querySelectorAll('.sidebar-list li').forEach(item => {
+      item.addEventListener('click', () => {
+        const location = item.dataset.location;
+        const locationName = item.textContent.trim();
+        alert(`Navegando a: ${locationName}`);
+        
+        // Remover clase active de todos los botones
+        document.querySelectorAll('.map-btn').forEach(btn => {
+          btn.classList.remove('active-location');
+        });
+        
+        // Agregar clase active al botón correspondiente
+        const targetBtn = document.querySelector(`.map-btn[data-location="${location}"]`);
+        if (targetBtn) {
+          targetBtn.classList.add('active-location');
+        }
+      });
+    });
+
+    // Calculador de ruta simple
+    calculateRouteBtn.addEventListener('click', () => {
+      const start = document.getElementById('startPoint').value;
+      const end = document.getElementById('endPoint').value;
+      
+      if (!start || !end) {
+        alert('Por favor, ingresa tanto el punto de inicio como el destino.');
+        return;
+      }
+      
+      routeDetails.textContent = `Ruta desde ${start} hasta ${end}: Aproximadamente 5 minutos caminando.`;
+      routeInfo.style.display = 'block';
+    });
+
+    // Posicionar tooltip correctamente al mover el mouse
+    document.addEventListener('mousemove', (e) => {
+      if (tooltip.style.display === 'block') {
+        tooltip.style.left = (e.pageX + 10) + 'px';
+        tooltip.style.top = (e.pageY - 40) + 'px';
+      }
+    });
+
+    console.log('FMAP - Mapa Virtual FMAT UADY cargado correctamente');
+  </script>
+</body>
+</html>
