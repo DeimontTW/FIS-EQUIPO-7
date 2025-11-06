@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FMAP - Mapa Virtual FMAT UADY</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lucide/0.263.1/umd/lucide.min.js"></script>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      background: #f5f5f5;
+      overflow: hidden;
+    }
+
+    header {
+      background: linear-gradient(135deg, #012e5f, #014580);
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 2rem;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    }
+
+    .logo-title {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .logos img {
+      height: 80px;
+      width: auto;
+      border-radius: 8px;
+      background: white;
+      padding: 0.3rem;
+    }
+
+    .title-text h1 {
+      font-size: 2rem;
+      font-weight: 800;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+    }
+
+    .title-text p {
+      font-size: 1.1rem;
+      opacity: 0.9;
+    }
+
+    .view-switch {
+      display: flex;
+      align-items: center;
+      background: white;
+      border-radius: 30px;
+      overflow: hidden;
+      cursor: pointer;
+      border: 2px solid #012e5f;
+    }
+
+    .switch-option {
+      padding: 0.6rem 1.2rem;
+      color: #012e5f;
+      font-weight: 700;
+      transition: all 0.3s;
+    }
+
+    .switch-option.active {
+      background: #c79316;
+      color: white;
+    }
+
+    .main-container {
+      display: flex;
+      height: calc(100vh - 100px);
+      transition: all 0.5s ease;
+    }
+
+    .sidebar {
+      width: 300px;
+      background: white;
+      box-shadow: 2px 0 10px rgba(0,0,0,0.1);
+      overflow-y: auto;
+      transition: all 0.4s ease;
+    }
+
+    .sidebar.hidden {
+      width: 0;
+      opacity: 0;
+      overflow: hidden;
+    }
+
+    .toggle-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: #012e5f;
+      color: white;
+      border: none;
+      border-radius: 0 8px 8px 0;
+      width: 25px;
+      height: 60px;
+      cursor: pointer;
+      z-index: 5;
+    }
+
+    .sidebar-right {
+      right: 0;
+      border-left: 1px solid #ddd;
+    }
+
+    .viewer {
+      flex: 1;
+      position: relative;
+      background: #e0e0e0;
+      overflow: hidden;
+      transition: all 0.5s ease;
+    }
+
+    .street-view, .map-2d {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      transition: opacity 0.6s ease;
+    }
+
+    .street-view {
+      background: linear-gradient(to bottom, #87CEEB, #E0F6FF, #D3D3D3);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #012e5f;
+      font-size: 2rem;
+      font-weight: 700;
+    }
+
+    .map-2d {
+      background: url('c5fd4331-3682-42ac-b9e3-16bb1dd0448d.png') center/contain no-repeat;
+      opacity: 0;
+    }
+
+    .map-2d.active {
+      opacity: 1;
+    }
+
+    .tooltip {
+      position: absolute;
+      background: white;
+      color: #012e5f;
+      padding: 0.4rem 0.6rem;
+      border-radius: 6px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+      font-size: 0.85rem;
+      display: none;
+      z-index: 10;
+      white-space: nowrap;
+    }
+
+    .map-btn {
+      position: absolute;
+      background: #012e5f;
+      color: white;
+      border: none;
+      padding: 0.4rem 0.6rem;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 0.8rem;
+      transition: all 0.3s;
+    }
+
+    .map-btn:hover {
+      background: #c79316;
+      transform: scale(1.05);
+    }
+
+    .active-location {
+      animation: pulse 1.5s infinite;
+    }
+
+    @keyframes pulse {
+      0%,100% { box-shadow: 0 0 0 0 rgba(199,147,22, 0.7); }
+      50% { box-shadow: 0 0 10px 5px rgba(199,147,22, 0.4); }
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo-title">
+      <div class="logos">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPfpWdfaJFb5jG1r2C-J_RyDCTK2o6FRFlbo_Zr-y8J7AldDVLaxE4GQvyWQ8x_q68KDE&usqp=CAU" alt="FMAT">
+        <img src="https://media.licdn.com/dms/image/v2/D5603AQF11oyYRxnz4A/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1680213696912?e=2147483647&v=beta&t=jWernuyB0zbyAOwClaPCmsBQyzOSbZDv6Nl00zIZtzI" alt="UADY">
+      </div>
+      <div class="title-text">
+        <h1>FMAP</h1>
+        <p>Mapa Virtual FMAT - UADY</p>
+      </div>
+    </div>
+    <div class="view-switch" id="viewSwitch">
+      <div class="switch-option active" data-view="2d">Vista 2D</div>
+      <div class="switch-option" data-view="street">Street View</div>
+    </div>
+  </header>
+
+  <div class="main-container">
+    <button class="toggle-btn" id="toggleLeft"><</button>
+    <div class="sidebar" id="sidebarLeft">
+      <h3 style="padding:1rem;color:#012e5f;">Puntos de Interés</h3>
+      <ul style="padding:1rem;list-style:none;">
+        <li>Administración</li>
+        <li>Biblioteca</li>
+        <li>Aulas</li>
+        <li>Laboratorios</li>
+        <li>Cafetería</li>
+      </ul>
+    </div>
+
+    <div class="viewer" id="viewer">
+      <div class="street-view" id="streetView">Vista Panorámica 360°</div>
+      <div class="map-2d" id="map2d">
+        <button class="map-btn" style="top:35%;left:40%;" data-tooltip="📚 Biblioteca: Recursos bibliográficos.">Biblioteca</button>
+        <button class="map-btn" style="top:60%;left:25%;" data-tooltip="🏛️ Aulas: Clases y conferencias.">Aulas</button>
+        <button class="map-btn" style="top:45%;left:60%;" data-tooltip="🧮 Laboratorios: Cómputo y análisis.">Labs</button>
+        <button class="map-btn" style="top:25%;left:70%;" data-tooltip="☕ Cafetería: Área de descanso.">Cafetería</button>
+        <button class="map-btn active-location" style="top:50%;left:45%;" data-tooltip="🏢 Administración: Oficina principal.">Admin</button>
+        <div class="tooltip" id="tooltip"></div>
+      </div>
+    </div>
+
+    <div class="sidebar sidebar-right" id="sidebarRight">
+      <h3 style="padding:1rem;color:#012e5f;">Planificador de Ruta</h3>
+      <div style="padding:1rem;">
+        <input type="text" placeholder="Inicio" style="width:100%;padding:0.5rem;margin-bottom:0.5rem;">
+        <input type="text" placeholder="Destino" style="width:100%;padding:0.5rem;margin-bottom:0.5rem;">
+        <button style="width:100%;padding:0.5rem;background:#012e5f;color:white;border:none;border-radius:6px;cursor:pointer;">Calcular</button>
+      </div>
+    </div>
+    <button class="toggle-btn sidebar-right" id="toggleRight">></button>
+  </div>
+
+  <script>
+    lucide.createIcons();
+
+    const viewSwitch = document.getElementById('viewSwitch');
+    const view2d = document.getElementById('map2d');
+    const street = document.getElementById('streetView');
+
+    viewSwitch.addEventListener('click', e => {
+      if (!e.target.classList.contains('switch-option')) return;
+      document.querySelectorAll('.switch-option').forEach(btn => btn.classList.remove('active'));
+      e.target.classList.add('active');
+      const view = e.target.dataset.view;
+      if (view === '2d') {
+        view2d.classList.add('active');
+        street.style.opacity = 0;
+      } else {
+        view2d.classList.remove('active');
+        street.style.opacity = 1;
+      }
+    });
+
+    const left = document.getElementById('sidebarLeft');
+    const right = document.getElementById('sidebarRight');
+    document.getElementById('toggleLeft').onclick = () => left.classList.toggle('hidden');
+    document.getElementById('toggleRight').onclick = () => right.classList.toggle('hidden');
+
+    const tooltip = document.getElementById('tooltip');
+    document.querySelectorAll('.map-btn').forEach(btn => {
+      btn.addEventListener('mouseenter', e => {
+        tooltip.textContent = btn.dataset.tooltip;
+        tooltip.style.display = 'block';
+        tooltip.style.top = btn.offsetTop - 30 + 'px';
+        tooltip.style.left = btn.offsetLeft + 'px';
+      });
+      btn.addEventListener('mouseleave', () => tooltip.style.display = 'none');
+    });
+  </script>
+</body>
+</html>
