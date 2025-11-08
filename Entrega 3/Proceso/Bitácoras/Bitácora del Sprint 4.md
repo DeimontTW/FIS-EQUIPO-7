@@ -11,14 +11,19 @@ Participantes:
 
 Objetivos:
 
-* Grabación del video  
-* Edición y producción del video
+* Grabar el video  
+* Crear y editar el video
+* Elaborar bitácoras
+* Revisar los documentos finales
 
 Actividades realizadas:
 
-* Se grabó el video  
-* Se editó el video
-
+|  |  |
+| :--- | :--- |
+| Grabación del video| Matú Leonardo, Padilla Germán y Trujeque Isaac|
+| Creación y edición del video | Vivanco Josué |
+| Elaboración de bitácoras | Vivanco Josué |
+| Revisión de los documentos finales | Padilla Germán |
 
 Pendientes:
 
