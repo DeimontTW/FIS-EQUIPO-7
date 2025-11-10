@@ -2,6 +2,36 @@
 
 Proyecto: Mapa virtual interactivo e informativo de la Facultad de Matemáticas de la UADY.
 
+
+
+[Producto](Entrega%203/Producto)
+
+
+[Descripción del proceso](Entrega%203/Proceso/Descripción%20del%20proceso.md)
+
+
+[Gestión del proceso](Entrega%203/Proceso/Gestión%20de%20proceso.md)
+
+
+[Bitácoras](Entrega%203/Proceso/Bitácoras)
+
+
+[Requisitos Funcionales](Entrega%203/Requisitos/Priorización%20Requisitos%20Funcionales.md)
+
+
+[Requisitos no funcionales](Entrega%203/Requisitos/Priorización%20Requisitos%20No%20Funcionales.md)
+
+
+[Historias de usuario](Entrega%203/Requisitos/Historias%20de%20usuario.md)
+
+
+[Competencias genéricas y específicas](Entrega%203/Competencias%20genéricas%20y%20específicas.md)
+
+
+[Métrica de contribución individual](Entrega%203/Proceso/Métrica%20de%20contribución%20individual%20Entrega%203.md)
+
+
+
 ***Integrantes del equipo (roles actualizados de acuerdo a Scrum):***
 
 * Matú Leonardo (Desarrollador)
@@ -19,25 +49,3 @@ Proyecto: Mapa virtual interactivo e informativo de la Facultad de Matemáticas 
 |Isaac Alejandro Trujeque Martin ![ISAAC](imagenes/ISAAC.png)|Desarrollador|
 |Leonardo Palma Coll  ![LeonardoPalmaColl](https://github.com/user-attachments/assets/c646c5b8-5f88-4f33-b9cc-c3eeecc83c3a)            |  desarrollador   |
 |Leonardo Daniel Matú  ![leonardo daniel matu](imagenes/foto.jpg)            |  desarrollador   |
-
-
-[Producto](Entrega%201/Producto)
-
-
-[Video Presentación](Entrega%201/VIDEO%20PRESENTACIÓN.MD)
-
-
-[Proceso](Entrega%201/Proceso)
-
-
-[Requisitos](Entrega%201/Requisitos)
-
-
-
-[Historias de usuario](Entrega%201/Historias.md)
-
-
-[Competencias genéricas](Entrega%201/Competencias%20genéricas.md)
-
-
-[Competencias específicas](Entrega%201/Competencias%20específicas.md)
