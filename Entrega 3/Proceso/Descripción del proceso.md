@@ -32,9 +32,11 @@ El criterio de asignación de los roles se basó enteramente en la posición de 
 
 ---
 
-## Planificación de sprints (inicialmente)
+## Planificación de sprints 
 
-Nuestro primer sprint formal se inició el **17/Octubre/2025**, desde ahí comenzamos a planificar sprints de duración menor con respecto a la duración típica de un sprint corto (1 semana), pues nuestros sprints consistieron en periodos de **3 y 4 días**.
+Nuestro primer sprint formal se inició el **17/Octubre/2025**, desde ahí comenzamos a planificar sprints de duración menor con respecto a la duración típica de un sprint corto (1 semana), pues nuestros sprints consistieron en periodos de **3 y 4 días**. La clave detrás del por qué decidimos planificar así nuestros sprints consistió en una discusión durante una de nuestras reuniones aún no planificadas donde se propuso compaginar el periodo de sprint con los mismos periodos entre clases de FIS.  
+
+A partir de entrega 3 (4/11/2025), nuestra duración por sprint cambió a una semana, ya que los martes de cada semana se harían los weekly con el profesor, donde se revisarían los resultados de cada sprint
 
 | Sprint | Duración | Periodo de sprint | Sesión al final de cada sprint |
 |:-------|:----------|:------------------|:-------------------------------|
@@ -42,10 +44,10 @@ Nuestro primer sprint formal se inició el **17/Octubre/2025**, desde ahí comen
 | **Sprint 2** | 3 días | Martes 21/Octubre/2025 – viernes 24/Octubre/2025 | 24/Octubre/2025 a las 6:00 PM |
 | **Sprint 3** | 4 días | Viernes 24/Octubre/2025 – martes 28/Octubre/2025 | 28/Octubre/2025 a las 6:00 PM |
 | **Sprint 4** | 3 días | Martes 28/Octubre/2025 – viernes 31/Octubre/2025 | 31/Octubre/2025 a las 6:00 PM |
-
-La clave detrás del por qué decidimos planificar así nuestros sprints consistió en una discusión durante una de nuestras reuniones aún no planificadas donde se propuso compaginar el periodo de sprint con los mismos periodos entre clases de FIS.  
-
-De esa manera, cada día de inicio y final de sprint, también es un día de sesión de clase de FIS. 
+| **Sprint 5** | 7 días | Martes 4/Noviembre/2025 – martes 11/Noviembre/2025 | 11/Noviembre/2025 a las 10:00 AM |
+| **Sprint 6** | 7 días | Martes 11/Noviembre/2025 – martes 18/Noviembre/2025 | 18/Noviembre/2025 a las 10:00 AM |
+| **Sprint 7** | 7 días | Martes 18/Noviembre/2025 – martes 25/Noviembre/2025 | 25/Noviembre/2025 a las 10:00 AM | 
+| **Sprint 8** | 4 días | Martes 25/Noviembre/2025 – viernes 28/Noviembre/2025 | 28/Noviembre/2025 a las 9:30 AM | 
 
 ---
 

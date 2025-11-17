@@ -1,10 +1,10 @@
 # Gestión del proceso
 
-Como parte de la gestión del proceso, he aquí un listado general de cómo es que se construyeron los elementos del proceso llevado durante el periodo de la segunda entrega del proyecto:
+Como parte de la gestión del proceso, he aquí un listado general de cómo es que se construyeron los elementos del proceso llevado.
 
 ---
 
-## Actividades
+## Actividades Entrega 2
 
 | Actividad | Responsables y tareas | Herramientas y/o métodos | Entregables | Fechas límite de entrega |
 |:-----------|:----------------------|:--------------------------|:-------------|:--------------------------|
@@ -13,3 +13,14 @@ Como parte de la gestión del proceso, he aquí un listado general de cómo es q
 | **Definición del DoD y criterios de aceptación** | **Leonardo Palma:** Análisis y redacción del DoD.<br><br>**Josué Vivanco:** Análisis y redacción de criterios de aceptación con base en historias de usuario. | Markdown<br>Github<br>GitKraken | Archivo `.md` con el DoD definido.<br><br>Archivo `.md` con los criterios de aceptación definidos. | 21/Octubre/2025 a las 6 PM |
 | **Actualización del proceso para su registro en el repositorio de Github** | **Germán Padilla:** Análisis del proceso, redacción del documento `.md` y documentación en Github. | Markdown<br>Github<br>GitKraken | Archivo `.md` con la descripción del proceso actualizada.<br><br>Archivo `.md` con la gestión del proceso actualizada. | 24/Octubre/2025 a las 6 PM |
 | **Modificación del prototipo (V2): añadir esquema 2D y primera vista de Street View.** | **Germán Padilla:** Inserción de Street View en el prototipo mediante prompts de IA.<br><br>**Isaac Trujeque:** Inserción de Esquema 2D en el prototipo mediante prompts de IA. | ChatGPT<br>DeepSeek<br>Claude<br>Gemini | Versión 2 del mismo HTML creado para refinamiento de requisitos e historias de usuario. | 24/Octubre/2025 a las 6 PM |
+
+---
+## Actividades Entrega 3
+
+| Actividad | Responsables y tareas | Herramientas y/o métodos | Entregables | Fechas límite de entrega |
+|:-----------|:----------------------|:--------------------------|:-------------|:--------------------------|
+| **Rediseñar el mapa 2D** | **Trujeque Isaac:** elaboración de un mapa 2D con mayor resolución y espacios agregados | Canva<br> Croquis base de FMAT | Proyecto en canva con un nuevo mapa 2D mejorado | 10/Noviembre/2025 |
+| **Mejorar la vista Street View** | **Padilla Germán:** Recolectar imágenes panorámicas de la facultad, para simular un entorno 360°.| Claude<br>Canva<br> | Archivo HTML con el módulo del Street View del centro de cómputo de FMAT. | 10/Noviembre/2025 | 
+| **Diseñar la interfaz del mapa virtual en Framer** | **Matú Leonardo y Pool Juan:** Crear un diseño semifuncional en la herramienta framer.| Youtube<br>Framer |Primera versión del diseño en Framer para computadora, y se empezó a modificar para su adaptación a Tablet y dispositivo móvil| 10/Noviembre/2025|
+| **Crear Personas y Flows** | **Palma Leonardo:** Redactar preguntas para realizar las entrevistas en 3 diferentes Inteligencias Artificiales | Gemini<br>Deepseek<br>ChatGPT<br><br>Github<br>GitKraken | 3 Archivos `.md` con entrevistas de usuarios (Aspirantes, Estudiantes y Visitantes) sintéticos creados con IA (Gemini)| 10/Noviembre/2025|
+| **Hacer correcciones de la documentación y organizar el repositorio** | **Vivanco Josué:** Corregir los archivos: Historias de Usuario, Criterios de Aceptación, Requisitos Funcionales, Bitácoras(1-4) y organizar el repo.| Github<br>Gitkraken<br>Gemini | Archivos corregidos en `.md`: Historias de Usuario, Criterios de Aceptación, Requisitos Funcionales y Bitácoras(1-4)| 10/Noviembre/2025

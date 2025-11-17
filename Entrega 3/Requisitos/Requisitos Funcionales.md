@@ -1,5 +1,5 @@
 # Requisitos Funcionales # 
-- **El mapa debe representar la infraestructura de la facultad de matemáticas en un esquema detallado en 2D y un entorno virtual Street view:** 
+- **El mapa debe representar la infraestructura de la facultad de matemáticas (Entrada y Salida de la facultad, Estacionamiento, Centro de Cómputo, Área Administrativa, Cajero, Biblioteca, Cubículos de Maestros, Cafetería, Baños, Edificio F, Edificio C, Escaleras, Edificio D, Edificio H, Canchas, Áreas Comúnes y el CLIR) en un esquema detallado en 2D y un entorno virtual Street view:** 
   La vista 2D será un plano interactivo y la Street View usará imágenes panorámicas (360°) reales de los puntos clave.
 
 - **Mostrar la ubicación del usuario y rastrearla usando el GPS de su dispositivo:** 
