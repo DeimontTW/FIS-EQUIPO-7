@@ -1,7 +1,7 @@
 
 ---------
 
-### Proceso (actualización SEGUNDA ENTREGA)
+### Proceso (actualización TERCERA ENTREGA)
 
 Una vez concluida nuestra primera entrega, uno de los objetivos para la segunda fue replantear nuestro proceso, por lo cual se eligió implementar la metodología **Scrum**.
 
@@ -63,7 +63,8 @@ Habiendo hecho un prototipo construido con IA, sirvió como modelo base para com
 
 ## Sesión al final de cada sprint
 
-A pesar de no encajar enteramente con los plazos de tiempo de un *weekly*, tratamos las sesiones como tal.  
+Al tratar las sesiones como *weeklys*.
+
 Los objetivos principales de cada sesión fueron:
 
 - Discutir avances del proyecto en general.
