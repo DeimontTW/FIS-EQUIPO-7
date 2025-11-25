@@ -25,6 +25,9 @@ Proyecto: Mapa virtual interactivo e informativo de la Facultad de Matemáticas 
 [Historias de usuario](Entrega%203/Requisitos/Historias%20de%20usuario.md)
 
 
+[Pruebas](Entrega%203/Pruebas)
+
+
 [Competencias genéricas y específicas](Entrega%203/Competencias%20genéricas%20y%20específicas.md)
 
 
