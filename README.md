@@ -31,7 +31,9 @@ Proyecto: Mapa virtual interactivo e informativo de la Facultad de Matemáticas 
 [Competencias genéricas y específicas](Entrega%203/Competencias%20genéricas%20y%20específicas.md)
 
 
-[Métrica de contribución individual](Entrega%203/Proceso/Métrica%20de%20contribución%20individual%20Entrega%203.md)
+[Métrica FINAL de contribución individual](Entrega%203/Proceso/Métrica%20FINAL%20de%20contribución%20individual.md)
+
+[Métrica de contribución individual Entrega 3](Entrega%203/Proceso/Métrica%20de%20contribución%20individual%20Entrega%203.md)
 
 
 
