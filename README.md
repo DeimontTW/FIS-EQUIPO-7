@@ -3,6 +3,7 @@
 Proyecto: Mapa virtual interactivo e informativo de la Facultad de Matemáticas de la UADY.
 
 
+[VIDEO DE PRESENTACIÓN FINAL](Entrega%203/VIDEO%20DE%20PRESENTACIÓN%20FINAL.md)
 
 [Producto](Entrega%203/Producto)
 
@@ -31,7 +32,9 @@ Proyecto: Mapa virtual interactivo e informativo de la Facultad de Matemáticas 
 [Competencias genéricas y específicas](Entrega%203/Competencias%20genéricas%20y%20específicas.md)
 
 
-[Métrica de contribución individual](Entrega%203/Proceso/Métrica%20de%20contribución%20individual%20Entrega%203.md)
+[Métrica FINAL de contribución individual](Entrega%203/Proceso/Métrica%20FINAL%20de%20contribución%20individual.md)
+
+[Métrica de contribución individual Entrega 3](Entrega%203/Proceso/Métrica%20de%20contribución%20individual%20Entrega%203.md)
 
 
 
