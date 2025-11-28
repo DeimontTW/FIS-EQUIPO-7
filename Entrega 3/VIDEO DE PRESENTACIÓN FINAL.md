@@ -1,0 +1,1 @@
+Link del video: https://alumnosuady-my.sharepoint.com/:v:/g/personal/a25216400_alumnos_uady_mx/IQBq2tOJg3-jQYi2Ayupk_VcAdiqlY2XA16k_tv82L9n8KQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=wMALsA
