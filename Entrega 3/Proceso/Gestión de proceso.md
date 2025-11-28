@@ -40,4 +40,7 @@ Como parte de la gestión del proceso, he aquí un listado general de cómo es q
 | **Grabación del video de entrega 3** | **Pool Juan, Matú Leonardo, Palma Leonardo, Padilla Germán, Trujeque Isaac y Vivanco Josué:** Grabar un video final, en inglés|Cámara Celular<br>Micrófono| Videos| 25/Noviembre/2025|
 | **Unificación de resultados de pruebas de usuario** | **Matú Leonardo** Juntar todos los archivos `.docx` de los resultados de las pruebas de usuario, en 1 solo |Google Docs<br>ChatGPT<br>Github<br>Gitkraken| Archivo`.md`con todos los resultados de las pruebas de usuario| 25/Noviembre/2025|
 | **Crear Bitácora del Sprint 7** | **Vivanco Josue:** Crear la bitácora del sprint 7| Github<br>Gitkraken<br>Google Docs | Bitácora del Sprint 7 en `.md`| 25/Noviembre/2025|
+<<<<<<< HEAD
 | **Edición del video de presentación** | **Vivanco Josue:** Editar, producir y renderizar el video de presentación de la entrega final.| CapCut | Video de presentación subido en OneDrive/Youtube | 28/Noviembre/2025|
+=======
+>>>>>>> origin/Josue-Vivanco
